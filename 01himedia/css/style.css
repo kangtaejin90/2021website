@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*header*/
+#header{box-sizing: border-box; text-align: center;}
+.utilWrap{border-bottom: 1px solid #ccc;}
+.util{width: 980px; margin: 0 auto;}
+.utilmenu{margin-left: auto; width: 280px;}
+.utilmenu li{float: left; position: relative;}
+.utilmenu li:after
+	{content:"";width: 1px; height: 10px; background-color: #ccc;
+	position: absolute; right: 0; top: 10px;}
+.utilmenu li:last-child:after{content: ""; display: none;}	
+.utilmenu a{display: block; padding: 0 10px; line-height: 30px;}
+#header h1{text-align: center; line-height: 75px;}
+.gnbWrap{background-color: #1d5ad4;}
+.gnbmenu{width: 980px; margin: 0 auto;}
+.gnbmenu ul{}
+.gnbmenu li{float: left; width: 163.33px; border-right: 1px solid #fff; box-sizing: border-box;}
+.gnbmenu li:first-child{border-left: 1px solid #fff;}
+.gnbmenu a{display: block; line-height: 45px; color: #fff;}
+.gnbmenu a:hover{background-color: #6495ED; color: #00008B;}
+
+/*visualWrap*/
+.visualWrap{height: 400px; overflow: hidden;
+	/*background-color: #223a6a; height: 400px;
+	background-image: url(../images/main_bg01.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;*/
+	background: #223a6a url(../images/main_bg01.jpg) no-repeat center
+}
+
+.visual{width: 980px; margin: 0 auto; position: relative;}
+.visualimg01{position: absolute; top: 76px;}
+.visualimg02{position: absolute; right: 60px;}
+
+/*banner*/
+.section{background-color: #eee;}
+.banner{width: 980px; margin: 0 auto; }
+.banner li{float: left; width: 196px; text-align: center; height: 196px; 
+		padding: 15px; box-sizing: border-box; color: #fff;}
+.banner li:nth-child(1){background-color: #7c99b9;}
+.banner li:nth-child(2){background-color: #4f74a1;}
+.banner li:nth-child(3){background-color: #4b8ce0;}
+.banner li:nth-child(4){background-color: #3db5f2;}
+.banner li:nth-child(5){background-color: #95c8ff;}
+.banner img{margin: 0 auto;}
+.banner a{display: block;}
+.banner p{font-size: 12px;}
+
+/*content01*/
+.contWrap01{width: 980px; margin: 0 auto;}
+.content01 li{float: left; width: 310px; margin-right: 25px; cursor: pointer;}
+.content01 li:last-child{margin-right: 0;}
+.content01 .body{border: 1px solid #ccc; border-top: 0 none;}
+.content01 .body p{overflow: hidden;white-space: nowrap; text-overflow: ellipsis;}
+
+/*content02*/
+.contWrap02{width: 980px; margin: 0 auto;}
+.content02 li{float: left; width: 310px; margin-right: 25px; border: 1px solid #ccc; padding: 20px; position: relative; overflow: hidden;}
+.content02 li:_first-child{background-image: url(../images/cont_icon01.png); background-repeat: no-repeat; background-position: 130px 10px;}
+.content02 li:nth-child(2){background-image: url(../images/cont_icon02.png); background-repeat: no-repeat; background-position: 115px 10px;}
+.content02 li:last-child{margin-right: 0;background-image: url(../images/cont_icon03.png); background-repeat: no-repeat; background-position: 135px 10px;}
+.body{position: relative;}
+.body p{width: 150px;}
+.body a{font-size: 14px; color: #4b8ce0;}
+.body img{position: absolute; right: -40px ; top: -15px; z-index: -1}
+
+/*footer*/
+#footer{background-color: #5e5e5e;}
+.footerTopWrap{background-color: #4d4d4d;}
+.footerTop{width: 980px; margin: 0 auto;}
+.footerTop li{float: left; position: relative; overflow: hidden;}
+.footerTop li:after{content: "";display: block; width: 1px; height: 16px; background-color: #fff; position: absolute; right: 0; top: 14px;
+	position: absolute; }
+.footerTop li:first-child a{padding-left: 0px;}
+.footerTop li:last-child:after{display: none;content: "";}
+.footerTop a{display: block; line-height: 40px; padding: 0 15px ; color: #fff;}
+.footerBottom{width: 980px;margin: 0 auto; color: #fff;}
+.footerBottom .logo{float: left; width: 200px; font-size: 20px; font-weight: bold;}
+.footerBottom .copy{float: left;}
+
+
+
+
+
+
+
+
+
+
+
+.mb5{margin-bottom: 5px !important;}
+.mb10{margin-bottom: 10px !important;}
+.mb15{margin-bottom: 15px !important;}
+.mb20{margin-bottom: 20px !important;}
+.mb50{margin-bottom: 50px !important;}
+
+.pa5{padding: 5px !important;}
+.pa10{padding: 10px !important;}
+.pa15{padding: 15px !important;}
+.pa20{padding: 20px !important;}
+
+.ptb20{padding: 20px 0;}
+
+.pt5{padding-top: 5px;}
+.pt10{padding-top: 10px;}
+.pt15{padding-top: 15px;}
+.pt20{padding-top: 20px;}
