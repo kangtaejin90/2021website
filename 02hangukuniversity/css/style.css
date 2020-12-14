@@ -1,3 +1,14 @@
 @charset "utf-8";
 
 /*header*/
+.util_menu_wrap{background-color: #0044af;}
+.util_menu{width: 1200px; margin: 0 auto; }
+.util_menu .left{float: left;}
+.util_menu .left li{float: left; width: 120px; background-color: #00163b; line-height: 40px; margin-right: 2px;}
+.util_menu .left li a.active{background-color: #fff; color: #888;}
+.util_menu .left li a:hover{background-color: #fff; color: #888;}
+.util_menu .left a{color: #fff; display: block; font-weight: bold;}
+.util_menu .right{float: right;}
+.util_menu .right a{color: #fff; display: block;}
+.util_menu .right li{float: left; color: #fff; line-height: 40px; margin-left:10px; position: relative; font-size: 0.8em;}
+.util_menu .right .btn_mp a{float: left; width: 16px; height: 16px; background-color: #fff; color: #888; font-weight: bold; font-size: 16px; line-height: 12px; margin-top: 12px; text-align: center; margin-right: 2px;}
