@@ -27,7 +27,7 @@
 
 /*contents*/
 #contents{background-image: url(../images/bgimg02.png), url(../images/bgimg01.jpg);
-		background-size: auto, cover ; background-repeat: repeat, no-repeat; background-position: auto, center; }
+		background-size: auto, cover ; background-repeat: repeat, no-repeat; background-position: auto, center; padding-bottom: 70px;}
 #contents .title{width: 1200px; margin: 0 auto;}
 #contents .titletxt{float: left; color: #fff; margin-top: 80px;}
 #contents .titletxt p{font-size: 36px;}
@@ -63,8 +63,21 @@
 .maincontent>li.mct03 a{display: block; color: #fff; text-align: center; font-size: 14px} 
 .maincontent>li.mct04{background-image: url(../images/content_img03.jpg); color: #fff;} 
 .maincontent>li.mct04 h2:after{content: '';display: block; width: 260px; height: 2px; background-color: #fff; margin: 20px 0;} 
-.maincontent>li.mct04 li{list-style: circle;} 
-.maincontent>li.mct04 a{color: #fff;} 
+.maincontent>li.mct04 li{list-style: square;margin-bottom: 5px ; margin-left: 25px;} 
+.maincontent>li.mct04 a{color: #fff; font-size: 12px;} 
+.maincontent>li.mct04 span:first-child{float: left;} 
+.maincontent>li.mct04 span:last-child{float: right;} 
 .maincontent>li.mct05{background-color: #fff;} 
-.maincontent>li.mct06{background-image: url(../images/content_img05.jpg);} 
-.maincontent>li.mct07{background-image: url(../images/content_img06.jpg);} 
+.maincontent>li.mct05 h2{margin-bottom: 25px;} 
+.maincontent>li.mct05 .mct05main{width: 260px;} 
+.maincontent>li.mct05 .mct05main img{display: block; margin-right: 15px; float: left;} 
+.maincontent>li.mct05 .mct05main a{display: block; float: right; font-size: 12px;} 
+.maincontent>li.mct06{background-image: url(../images/content_img05.jpg); position: relative;} 
+.maincontent>li.mct06 div{width: 300px; height: 50px; line-height: 50px; color: #fff; background-color: rgba(0,0,0,0.7); position: absolute; bottom: 0; text-align: center; font-size: 18px}  
+.maincontent>li.mct07{background-image: url(../images/content_img06.jpg); position: relative;} 
+.maincontent>li.mct07 img{display: block; position: absolute; top: 50%; margin-top: -31px; left: 50%; margin-left: -31px;} 
+.maincontent .slider02 li{position: relative;}
+.maincontent .slider02 div.slider02txt{position: absolute;top: 35px; left: 40px; color: #ff503f;}
+.maincontent .slider02 div.slider02txt p{font-size: 32px;}
+.maincontent .slider02 div.slider02txt h2{font-size: 60px; margin-top: -15px; margin-bottom: 10px;}
+.maincontent .slider02 div.slider02txt a{display: block; width: 170px; height: 40px; line-height: 40px; text-align: center; border: 1px solid rgba(255,255,255,0.7); background-color: rgba(255,50,30,0.7); color: #fff;}
