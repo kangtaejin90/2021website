@@ -27,7 +27,7 @@
 
 /*contents*/
 #contents{background-image: url(../images/bgimg02.png), url(../images/bgimg01.jpg);
-		background-size: auto, cover ; background-repeat: repeat, no-repeat; background-position: auto, center; padding-bottom: 70px;}
+		background-size: auto, 1500px ; background-repeat: repeat, no-repeat; background-position: center , center; padding-bottom: 70px;}
 #contents .title{width: 1200px; margin: 0 auto;}
 #contents .titletxt{float: left; color: #fff; margin-top: 80px;}
 #contents .titletxt p{font-size: 36px;}
@@ -39,17 +39,21 @@
 #contents .titleicon a{display: block; text-align: center; font-size: 14px; color: #fff;}
 
 .bx-wrapper {-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;
-  border: none; margin-bottom: 0;}
+  border: none; margin-bottom: 0; position: relative;}
 
 .maincontent>li{float: left; width: 25%; height: 225px;}
 .maincontent>li:first-child{width: 75%; height: 450px;}
 .maincontent>li:nth-child(2){height: 450px;}
 .maincontent>li:last-child{width: 75%;}
+
 .maincontent .slider01 li{position: relative;}
 .maincontent .slider01 div.slider01txt{position: absolute; top: 80px; left: 90px;}
 .maincontent .slider01 div.slider01txt p{color: #0044af; font-size: 60px; font-weight: 400; padding-bottom: 25px;}
 .maincontent .slider01 div.slider01txt a{display: block; width: 170px; height: 40px; 
 	background-color: #192d4e; color: #fff; text-align: center; line-height: 40px;}
+.maincontent .mct01 {position: relative;}
+.maincontent .mct01 .prevbtn, .nextbtn{position: absolute; top: 50%; margin-top: -35px; cursor: pointer;}
+.maincontent .mct01 .nextbtn{right: 0;}
 
 .maincontent>li.mct02{position: relative;} 
 .maincontent>li.mct02 .mct02txt{position: absolute; top: 0; color: #fff;} 
@@ -57,27 +61,51 @@
 .maincontent>li.mct02 .mct02txt p:nth-child(2){line-height: 22px; padding-bottom: 35px; font-size: 15px} 
 .maincontent>li.mct02 .mct02txt a{display: block; width: 170px; height: 40px; text-align: center; 
 	line-height: 40px; background-color: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.5);color: #fff;} 
+
 .maincontent>li.mct03 h2{color: #fff; padding-bottom: 35px;} 
 .maincontent>li.mct03 li{float: left; margin-left: 20px;} 
 .maincontent>li.mct03 img{margin-bottom: 10px; display: block;} 
 .maincontent>li.mct03 a{display: block; color: #fff; text-align: center; font-size: 14px} 
+
 .maincontent>li.mct04{background-image: url(../images/content_img03.jpg); color: #fff;} 
 .maincontent>li.mct04 h2:after{content: '';display: block; width: 260px; height: 2px; background-color: #fff; margin: 20px 0;} 
 .maincontent>li.mct04 li{list-style: square;margin-bottom: 5px ; margin-left: 25px;} 
 .maincontent>li.mct04 a{color: #fff; font-size: 12px;} 
 .maincontent>li.mct04 span:first-child{float: left;} 
 .maincontent>li.mct04 span:last-child{float: right;} 
+
 .maincontent>li.mct05{background-color: #fff;} 
-.maincontent>li.mct05 h2{margin-bottom: 25px;} 
-.maincontent>li.mct05 .mct05main{width: 260px;} 
+.maincontent>li.mct05 h2{margin-bottom: 20px;} 
+.maincontent>li.mct05 .mct05main{width: 260px; padding-bottom: 18px;} 
 .maincontent>li.mct05 .mct05main img{display: block; margin-right: 15px; float: left;} 
-.maincontent>li.mct05 .mct05main a{display: block; float: right; font-size: 12px;} 
+.maincontent>li.mct05 .mct05main a{float: left;width: 130px;display: block;font-size: 14px; line-height: 20px;} 
+.maincontent>li.mct05 .sns{float: right;} 
+.maincontent>li.mct05 .sns a{float: left; display: block; margin-left: 3px;} 
+
 .maincontent>li.mct06{background-image: url(../images/content_img05.jpg); position: relative;} 
-.maincontent>li.mct06 div{width: 300px; height: 50px; line-height: 50px; color: #fff; background-color: rgba(0,0,0,0.7); position: absolute; bottom: 0; text-align: center; font-size: 18px}  
+.maincontent>li.mct06 div{width: 300px; height: 50px; line-height: 50px; color: #fff; 
+	background-color: rgba(0,0,0,0.7); position: absolute; bottom: 0; text-align: center; font-size: 18px}  
+
 .maincontent>li.mct07{background-image: url(../images/content_img06.jpg); position: relative;} 
 .maincontent>li.mct07 img{display: block; position: absolute; top: 50%; margin-top: -31px; left: 50%; margin-left: -31px;} 
+
 .maincontent .slider02 li{position: relative;}
 .maincontent .slider02 div.slider02txt{position: absolute;top: 35px; left: 40px; color: #ff503f;}
 .maincontent .slider02 div.slider02txt p{font-size: 32px;}
-.maincontent .slider02 div.slider02txt h2{font-size: 60px; margin-top: -15px; margin-bottom: 10px;}
-.maincontent .slider02 div.slider02txt a{display: block; width: 170px; height: 40px; line-height: 40px; text-align: center; border: 1px solid rgba(255,255,255,0.7); background-color: rgba(255,50,30,0.7); color: #fff;}
+.maincontent .slider02 div.slider02txt h2{font-size: 52px; margin-top: -15px; margin-bottom: 20px;}
+.maincontent .slider02 div.slider02txt a{display: block; width: 170px; height: 40px; line-height: 40px; 
+	text-align: center; border: 1px solid rgba(255,255,255,0.7); background-color: rgba(255,50,30,0.7); color: #fff;}
+.maincontent .mct08 {position: relative;}
+.maincontent .mct08 .slider02pager{position: absolute; top: 25px; right: 40px;}
+.maincontent .mct08 .slider02pager a{display: block; width: 14px; height: 14px; background-color: #535353; border-radius: 7px; float: left; margin-left: 15px;}
+.maincontent .mct08 .slider02pager a.active{background-color: #f74237;}
+.maincontent .mct08 .slider02pager a:hover{background-color: #f62b1f;}
+.footer .logo img{display: block; margin: 59px 90px 59px 0; float: left;}
+.footer .footertxt {float: left; font-size: 12px; margin-top: 30px; color: #6b6b6b;}
+.footer .footertxt .ftutil li{float: left; padding: 0 18px; position: relative; padding-bottom: 10px;}
+.footer .ftutil li:first-child{padding-left: 0;}
+.footer .ftutil li:last-child:after{display: none;}
+.footer .ftutil li:after{content: ''; display: block; width: 1px; height: 12px; background-color: #6b6b6b; position: absolute; top: 2px; right: 0;}
+.footer .ftutil a{display: block; font-size: 12px; color: #6b6b6b;}
+.footer .footertxt li{padding-bottom: 2px;}
+.footer .footertxt>li:last-child{padding-top: 8px;}

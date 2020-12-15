@@ -14,8 +14,10 @@
 
 	<script>
 		$(document).ready(function(){
-			$(".slider01").bxSlider({pager:false,});
-			$(".slider02").bxSlider({controls:false,});
+			var mySlider01 = $(".slider01").bxSlider({pager:false, controls:false,});
+			$(".prevbtn").click(function(){mySlider01.goToPrevSlide()});
+			$(".nextbtn").click(function(){mySlider01.goToNextSlide()});
+			$(".slider02").bxSlider({controls:false, pagerCustom:".slider02pager"});
 		});
 
 	</script>
@@ -83,7 +85,7 @@
 		</section>
 		<div class="container">
 			<ul class="maincontent clearfix">
-				<li>
+				<li class="mct01">
 					<ul class="slider01">
 						<li>
 							<img src="images/content_img01.jpg" alt="">
@@ -107,6 +109,8 @@
 							</div>
 						</li>
 					</ul>
+					<div class="prevbtn"><img src="images/prev.png" alt=""></div>
+					<div class="nextbtn"><img src="images/next.png" alt=""></div>
 				</li>
 				<li class="mct02">
 					<img src="images/content_img02.jpg" alt="">
@@ -141,26 +145,26 @@
 						<li><a href="#" class="clearfix"><span>[공지] 2016년 1학기 성적...</span><span>2016-05-14</span></a></li>
 					</ul>
 				</li>
-				<li class="mct05 p_hk03">
+				<li class="mct05 p_hk03 clearfix">
 					<h2>SNS NEWS</h2>
 					<div class="mct05main clearfix">
 						<img src="images/content_img04.jpg" alt="">
-						<a href="#">한국 대학교는 2017학년도 신입생 입학실을 3월 2일(목) 본교 종합체육관 ...</a>
+						<a href="#">한국 대학교는<br>2017학년도 신입생<br>입학실을 3월2일(목)<br>본교 종합체육관...</a>
 					</div>
-					<div class="sns">
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
-						<a href="#"><img src="" alt=""></a>
+					<div class="sns clearfix">
+						<a href="#"><img src="images/snsicon01.jpg" alt=""></a>
+						<a href="#"><img src="images/snsicon02.jpg" alt=""></a>
+						<a href="#"><img src="images/snsicon03.jpg" alt=""></a>
+						<a href="#"><img src="images/snsicon04.jpg" alt=""></a>
 					</div>
 				</li>
 				<li class="mct06">
-					<div>캠퍼스 투어</div>
+					<a href="#"><div>캠퍼스 투어</div></a>
 				</li>
 				<li class="mct07">
 					<a href="#"><img src="images/content_btn.png" alt=""></a>
 				</li>
-				<li>
+				<li class="mct08">
 					<ul class="slider02">
 						<li>
 							<img src="images/content_img07.jpg" alt="">
@@ -195,10 +199,34 @@
 							</div>
 						</li>
 					</ul>
+					<div class="slider02pager clearfix">
+						<a href="#" data-slide-index="0"></a>
+						<a href="#" data-slide-index="1"></a>
+						<a href="#" data-slide-index="2"></a>
+						<a href="#" data-slide-index="3"></a>
+					</div>
 				</li>
 			</ul>
 		</div>
 	</div>
-
+	<footer class="footer clearfix container">
+		<div class="logo"><img src="images/logo_01.jpg" alt=""></div>
+		<ul class="footertxt">
+			<li class="ftutilwrap">
+				<ul class="ftutil clearfix">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="">한국 대학교</a></li>
+					<li><a href="">개인정보취급방침</a></li>
+					<li><a href="">이용정책</a></li>
+					<li><a href="">입점/제휴문의 및 광고</a></li>
+					<li><a href="">이메일 무단수집거부</a></li>
+				</ul>
+			</li>
+			<li>대표자 : 홍길동 &nbsp; 서울특별시 구로구 구로로 300(구로동 6가) &nbsp; 사업자등록번호 : 123-56-7890234</li>
+			<li>통신판매업 신고번호 : 제 1234-서울 구로구-1004호 &nbsp; 개인정보관리 책임자 : 홍길동 &nbsp; 소비자피해보상보험</li>
+			<li>고객센터 : 1234-5678 &nbsp;  FAX : 02-1234-5678 &nbsp; HANGUKUNIVERSITY @HANGUK.COM</li>
+			<li>COPYRIGHT (C) HANGUK. ALL RIGHTS RESERVED.</li>
+		</ul>
+	</footer>
 </body>
 </html>
