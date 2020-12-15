@@ -11,4 +11,16 @@
 .util_menu .right{float: right;}
 .util_menu .right a{color: #fff; display: block;}
 .util_menu .right li{float: left; color: #fff; line-height: 40px; margin-left:10px; position: relative; font-size: 0.8em;}
+.util_menu .right .btn_mp{margin-right: 10px;}
 .util_menu .right .btn_mp a{float: left; width: 16px; height: 16px; background-color: #fff; color: #888; font-weight: bold; font-size: 16px; line-height: 12px; margin-top: 12px; text-align: center; margin-right: 2px;}
+
+.logo {float: left;}
+.logo a{display: block; padding: 34px 0;}
+.logo img{display: block; height: 52px;}
+.gnb{float: right;}
+.gnb li{float: left; line-height: 120px; margin-right: 50px;}
+.gnb a{color: #888; font-weight: bold;}
+.gnb .gnb_button {margin-right: 0;}
+.gnb_button a{width: 45px; height: 45px; margin-top: 37.5px; display: block; float: left;}
+.gnb_button a:first-child{background-color: #9b9b9b; background-image: url(../images/button_menu.png);}
+.gnb_button a:last-child{background-image: url(../images/button_login.png);}
