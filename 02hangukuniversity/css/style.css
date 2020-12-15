@@ -69,7 +69,8 @@
 
 .maincontent>li.mct04{background-image: url(../images/content_img03.jpg); color: #fff;} 
 .maincontent>li.mct04 h2:after{content: '';display: block; width: 260px; height: 2px; background-color: #fff; margin: 20px 0;} 
-.maincontent>li.mct04 li{list-style: square;margin-bottom: 5px ; margin-left: 25px;} 
+.maincontent>li.mct04 li{margin-bottom: 5px; position: relative; margin-left: 13px; padding-bottom: 6px;} 
+.maincontent>li.mct04 li:before{content: ''; display: block; width: 3px; height: 3px; background-color: #fff; position: absolute; top: 6.5px; left: -13px;} 
 .maincontent>li.mct04 a{color: #fff; font-size: 12px;} 
 .maincontent>li.mct04 span:first-child{float: left;} 
 .maincontent>li.mct04 span:last-child{float: right;} 
