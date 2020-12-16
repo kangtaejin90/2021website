@@ -27,7 +27,7 @@
 
 /*contents*/
 #contents{background-image: url(../images/bgimg02.png), url(../images/bgimg01.jpg);
-		background-size: auto, 1500px ; background-repeat: repeat, no-repeat; background-position: center , center; padding-bottom: 70px;}
+		background-size: auto, cover ; background-repeat: repeat, no-repeat; background-position: center , center; padding-bottom: 70px;}
 #contents .title{width: 1200px; margin: 0 auto;}
 #contents .titletxt{float: left; color: #fff; margin-top: 80px;}
 #contents .titletxt p{font-size: 36px;}
@@ -51,6 +51,7 @@
 .maincontent .slider01 div.slider01txt p{color: #0044af; font-size: 60px; font-weight: 400; padding-bottom: 25px;}
 .maincontent .slider01 div.slider01txt a{display: block; width: 170px; height: 40px; 
 	background-color: #192d4e; color: #fff; text-align: center; line-height: 40px;}
+.maincontent .slider01 div.slider01txt a:hover{background-color: #fff; color: #192d4e; border: 1.5px solid #192d4e; font-weight: bold;}
 .maincontent .mct01 {position: relative;}
 .maincontent .mct01 .prevbtn, .nextbtn{position: absolute; top: 50%; margin-top: -35px; cursor: pointer;}
 .maincontent .mct01 .nextbtn{right: 0;}
@@ -61,6 +62,7 @@
 .maincontent>li.mct02 .mct02txt p:nth-child(2){line-height: 22px; padding-bottom: 35px; font-size: 15px} 
 .maincontent>li.mct02 .mct02txt a{display: block; width: 170px; height: 40px; text-align: center; 
 	line-height: 40px; background-color: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.5);color: #fff;} 
+.maincontent>li.mct02 .mct02txt a:hover{background-color: rgba(0,0,0,0.8); border: 1.5px solid rgb(255,255,255);font-weight: bold;}
 
 .maincontent>li.mct03 h2{color: #fff; padding-bottom: 35px;} 
 .maincontent>li.mct03 li{float: left; margin-left: 20px;} 
@@ -85,7 +87,8 @@
 
 .maincontent>li.mct06{background-image: url(../images/content_img05.jpg); position: relative;} 
 .maincontent>li.mct06 div{width: 300px; height: 50px; line-height: 50px; color: #fff; 
-	background-color: rgba(0,0,0,0.7); position: absolute; bottom: 0; text-align: center; font-size: 18px}  
+	background-color: rgba(0,0,0,0.7); position: absolute; bottom: 0; text-align: center; font-size: 18px; transition: 0.5s}  
+.maincontent>li.mct06 div:hover{width: 300px; height: 225px;line-height: 225px; transition: 0.5s}
 
 .maincontent>li.mct07{background-image: url(../images/content_img06.jpg); position: relative;} 
 .maincontent>li.mct07 img{display: block; position: absolute; top: 50%; margin-top: -31px; left: 50%; margin-left: -31px;} 
@@ -96,11 +99,14 @@
 .maincontent .slider02 div.slider02txt h2{font-size: 52px; margin-top: -15px; margin-bottom: 20px;}
 .maincontent .slider02 div.slider02txt a{display: block; width: 170px; height: 40px; line-height: 40px; 
 	text-align: center; border: 1px solid rgba(255,255,255,0.7); background-color: rgba(255,50,30,0.7); color: #fff;}
+.maincontent .slider02 div.slider02txt a:hover{border: 1.5px solid rgb(255,255,255); background-color: rgba(255,50,30,0.9);font-weight: bold;}
 .maincontent .mct08 {position: relative;}
 .maincontent .mct08 .slider02pager{position: absolute; top: 25px; right: 40px;}
 .maincontent .mct08 .slider02pager a{display: block; width: 14px; height: 14px; background-color: #535353; border-radius: 7px; float: left; margin-left: 15px;}
 .maincontent .mct08 .slider02pager a.active{background-color: #f74237;}
 .maincontent .mct08 .slider02pager a:hover{background-color: #f62b1f;}
+
+/*footer*/
 .footer .logo img{display: block; margin: 59px 90px 59px 0; float: left;}
 .footer .footertxt {float: left; font-size: 12px; margin-top: 30px; color: #6b6b6b;}
 .footer .footertxt .ftutil li{float: left; padding: 0 18px; position: relative; padding-bottom: 10px;}
@@ -108,5 +114,5 @@
 .footer .ftutil li:last-child:after{display: none;}
 .footer .ftutil li:after{content: ''; display: block; width: 1px; height: 12px; background-color: #6b6b6b; position: absolute; top: 2px; right: 0;}
 .footer .ftutil a{display: block; font-size: 12px; color: #6b6b6b;}
-.footer .footertxt li{padding-bottom: 2px;}
-.footer .footertxt>li:last-child{padding-top: 8px;}
+.footer p{float: left; font-size: 12px; color: #6b6b6b; line-height: 20px;}
+.footer p:last-child{float: left; font-size: 12px; color: #6b6b6b; line-height: 30px; padding-right: 100px;}
