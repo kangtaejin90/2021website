@@ -12,6 +12,12 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 
+	<script>
+		$(document).ready(function(){
+			$(".mainslider").bxSlider({controls:false, pager:false,});
+		});
+	</script>
+
 
 </head>
 <body>
@@ -28,5 +34,19 @@
 			<li class="active ch_hover"><a href="javascript:void(0)">Register</a></li>
 		</ul>
 	</header>
+	<div class="ms_wrap">
+		<ul class="mainslider">
+			<li>
+				<img src="images/mb_img01.jpg" alt="mb">	
+				<div class="txt">
+					<h2>Lorem ipsum dolor sit, amet, <span class="ch_c02">consectetur adipisicing elit1.</span></h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores minus quasi recusandae architecto exercitationem quos omnis consequatur facere. Consequatur.</p>
+					<a href="javascript:void(0)">Request Demo</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
 </body>
 </html>

@@ -6,7 +6,7 @@ body a{color: #222222; font-weight: 550;}
 /*header*/
 .header .logo{float: left;width: 175px; padding-top: 35px; padding-bottom: 15px;}
 .header .logo img{display: block;}
-.header .gnb{float: left;padding-left: 90px; padding-top: 55px;}
+.header .gnb{float: left;padding-left: 180px; padding-top: 55px;}
 .header .gnb li{float: left; padding: 0 35px;}
 .header .gnb a{display: block; position: relative;}
 .header .gnb a:after{content: ''; display: block; width: 0%; height: 2px; background-color: #adadad; transition: 0.5s; margin: 0 auto;}
@@ -16,6 +16,17 @@ body a{color: #222222; font-weight: 550;}
 .header .utilmenu a{display: block; line-height: 50px;}
 .header .utilmenu li.active a{background-color: #2c2c96;color: #fff;}
 .header .utilmenu a:hover{background-color: #2c2c96;color: #fff;}
+
+/*mainslider*/
+.bx-wrapper {-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;border: none;margin-bottom: 0;}
+
+.ms_wrap{width: 1200px; height: 785px;margin: 0 auto;}
+.mainslider{width: 100%; height: 100%;}
+.mainslider li{position: relative;}
+.mainslider img{display: block; position: absolute; left: 50%; margin-left: -960px ;}
+.mainslider .txt{position: absolute; top: 180px; width: 600px;}
+
+
 
 
 
