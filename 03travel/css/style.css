@@ -28,7 +28,32 @@
 .containerWrap{background-image: url(../images/bgpt.png), url(../images/bgimg.jpg); background-repeat: repeat, no-repeat; background-size: auto, cover; background-position: left left, top center;}
 .bx-wrapper {-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; margin-bottom: 0;}
 
-.mct01 .slider01wrap{width: 482px; height: 300px; float: left; background-color: #fff;}
+.mct01 .slider01wraper{width: 482px; height: 300px; float: left; background-color: #fff;}
+.mct01 .slider01wrap{width: 350px; height: 300px; float: right;}
+.mct01 .slider01{width: 350px !important; float: right;}
+.mct01 .sl01 {padding: 25px 35px;}
+.mct01 .sl01 fieldset{border: 0 none; position: relative;}
+.mct01 .sl01 fieldset legend{position: absolute; top: -9999px;}
+.mct01 .sl01 fieldset label{font-size: 14px; font-weight: bold; display: block; float: left;}
+.mct01 .sl01 fieldset .date{width: 132px;}
+.mct01 .sl01 fieldset .class{width: 118px; margin-right: 20px; float: left;}
+.mct01 .sl01 fieldset .peo{width: 66px; display: block; float: left;}
+.mct01 .sl01 fieldset .adult{margin-right: 10px;}
+.mct01 .sl01 fieldset input.date{display: block; border: 2px solid #ededed; border-radius: 4px; float: left; height: 32px; margin-top: 5px; margin-bottom: 10px; color: #d2d2d2; text-indent: 3px;}
+.mct01 .sl01 fieldset .date.start{margin-right: 16px;}
+.mct01 .sl01 fieldset select{height: 32px; border: 2px solid #ededed; border-radius: 4px; margin-top: 5px; margin-bottom: 10px; color: #d2d2d2; text-indent: 2px;}
+.mct01 .sl01 fieldset select.country{width: 280px;}
+.mct01 .slider01tab{float: left; width: 132px; height: 300px;}
+.mct01 .slider01tab a{background-image: url(../images/section02.jpg); height: 75px;}
+.mct01 .slider01tab a.tab02{background-image: url(../images/section02.jpg); background-position: 0 -75px; height: 75px;}
+.mct01 .slider01tab a.tab03{background-image: url(../images/section02.jpg); background-position: 0 -150px; height: 75px;}
+.mct01 .slider01tab a.tab04{background-image: url(../images/section02.jpg); background-position: 0 -225px; height: 75px;}
+.mct01 .slider01tab a.tab01.active{background-image: url(../images/section03.jpg); height: 75px;}
+.mct01 .slider01tab a.tab02.active{background-image: url(../images/section03.jpg); background-position: 0 -75px; height: 75px;}
+.mct01 .slider01tab a.tab03.active{background-image: url(../images/section03.jpg); background-position: 0 -150px; height: 75px;}
+.mct01 .slider01tab a.tab04.active{background-image: url(../images/section03.jpg); background-position: 0 -225px; height: 75px;}
+
+.mct01 .submit_btn{width: 280px; height: 38px; text-indent: -9999px; background-color: #fff; background-image: url(../images/box2_btn.jpg); border: 0 none; margin-top:15px;}
 .mct01title{width: 482px; height: 556px; float: right; padding-left: 14px !important;color: #152630;}
 .mct01title h2{font-size: 64px; padding-bottom: 10px; width: 400px;}
 .mct01title h2 span{text-decoration: underline;}

@@ -12,7 +12,7 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".slider01").bxSlider({controls:false});
+			$(".slider01").bxSlider({controls:false, pagerCustom:".slider01tab", mode:"vertical", auto:true});
 			var mct02sl = $(".slider02").bxSlider({pager:false, controls:false});
 			$(".prvbtn").click(function(){mct02sl.goToPrevSlide()});
 			$(".nxtbtn").click(function(){mct02sl.goToNextSlide()});
@@ -59,9 +59,224 @@
 	<div class="containerWrap">
 		<div class="content container pt55">
 			<div class="mct01 clearfix">
-				<div class="slider01wrap tr_mr16 tr_mb16">
-					<div class="slider01">
-						
+				<div class="slider01wraper tr_mr16 tr_mb16 clearfix">
+					<div class="slider01wrap">
+						<div class="slider01">
+							<div class="sl01">
+								<fieldset>
+									<legend>airport</legend>
+									<label for="country">가고싶은 나라를 선택하세요.</label>
+									<select name="country" id="country" class="country">
+										<option value="미국">미국</option>
+										<option value="영국">영국</option>
+										<option value="프랑스">프랑스</option>
+										<option value="중국">중국</option>
+										<option value="일본">일본</option>
+									</select>
+									<label for="start" class="date start">출발일</label>
+									<label for="arrival" class="date arrival">도착일</label>
+									<input type="date" id="start" name="start" class="date start">
+									<input type="date" id="arrival" name="arrival" class="date">
+									<label for="class" class="class">좌석등급</label>
+									<label for="adult" class="peo adult">성인</label>
+									<label for="child" class="peo child">아이</label>
+									<select name="class" id="class" class="class">
+										<option value="nomal">이코노미 클래스</option>
+										<option value="business">비즈니스 클래스</option>
+										<option value="first">퍼스트 클래스</option>
+									</select>
+									<select name="poe" id="adult" class="peo adult">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+									<select name="poe" id="child" class="peo child">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</fieldset>
+								<div class="submit_area">
+									<input type="submit" value="검색하기" class="submit_btn">
+								</div>
+							</div>
+							<div class="sl01">
+								<fieldset>
+									<legend>airport</legend>
+									<label for="country">가고싶은 나라를 선택하세요.</label>
+									<select name="country" id="country" class="country">
+										<option value="미국">미국</option>
+										<option value="영국">영국</option>
+										<option value="프랑스">프랑스</option>
+										<option value="중국">중국</option>
+										<option value="일본">일본</option>
+									</select>
+									<label for="start" class="date start">출발일</label>
+									<label for="arrival" class="date arrival">도착일</label>
+									<input type="date" id="start" name="start" class="date start">
+									<input type="date" id="arrival" name="arrival" class="date">
+									<label for="class" class="class">좌석등급</label>
+									<label for="adult" class="peo adult">성인</label>
+									<label for="child" class="peo child">아이</label>
+									<select name="class" id="class" class="class">
+										<option value="nomal">이코노미 클래스</option>
+										<option value="business">비즈니스 클래스</option>
+										<option value="first">퍼스트 클래스</option>
+									</select>
+									<select name="poe" id="adult" class="peo adult">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+									<select name="poe" id="child" class="peo child">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</fieldset>
+								<div class="submit_area">
+									<input type="submit" value="검색하기" class="submit_btn">
+								</div>
+							</div>
+							<div class="sl01">
+								<fieldset>
+									<legend>airport</legend>
+									<label for="country">가고싶은 나라를 선택하세요.</label>
+									<select name="country" id="country" class="country">
+										<option value="미국">미국</option>
+										<option value="영국">영국</option>
+										<option value="프랑스">프랑스</option>
+										<option value="중국">중국</option>
+										<option value="일본">일본</option>
+									</select>
+									<label for="start" class="date start">출발일</label>
+									<label for="arrival" class="date arrival">도착일</label>
+									<input type="date" id="start" name="start" class="date start">
+									<input type="date" id="arrival" name="arrival" class="date">
+									<label for="class" class="class">좌석등급</label>
+									<label for="adult" class="peo adult">성인</label>
+									<label for="child" class="peo child">아이</label>
+									<select name="class" id="class" class="class">
+										<option value="nomal">이코노미 클래스</option>
+										<option value="business">비즈니스 클래스</option>
+										<option value="first">퍼스트 클래스</option>
+									</select>
+									<select name="poe" id="adult" class="peo adult">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+									<select name="poe" id="child" class="peo child">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</fieldset>
+								<div class="submit_area">
+									<input type="submit" value="검색하기" class="submit_btn">
+								</div>
+							</div>
+							<div class="sl01">
+								<fieldset>
+									<legend>airport</legend>
+									<label for="country">가고싶은 나라를 선택하세요.</label>
+									<select name="country" id="country" class="country">
+										<option value="미국">미국</option>
+										<option value="영국">영국</option>
+										<option value="프랑스">프랑스</option>
+										<option value="중국">중국</option>
+										<option value="일본">일본</option>
+									</select>
+									<label for="start" class="date start">출발일</label>
+									<label for="arrival" class="date arrival">도착일</label>
+									<input type="date" id="start" name="start" class="date start">
+									<input type="date" id="arrival" name="arrival" class="date">
+									<label for="class" class="class">좌석등급</label>
+									<label for="adult" class="peo adult">성인</label>
+									<label for="child" class="peo child">아이</label>
+									<select name="class" id="class" class="class">
+										<option value="nomal">이코노미 클래스</option>
+										<option value="business">비즈니스 클래스</option>
+										<option value="first">퍼스트 클래스</option>
+									</select>
+									<select name="poe" id="adult" class="peo adult">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+									<select name="poe" id="child" class="peo child">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10</option>
+									</select>
+								</fieldset>
+								<div class="submit_area">
+									<input type="submit" value="검색하기" class="submit_btn">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider01tab clearfix">
+						<a href="" class="tab01 blind" data-slide-index="0">공항예약</a>
+						<a href="" class="tab02 blind" data-slide-index="1">호텔예약</a>
+						<a href="" class="tab03 blind" data-slide-index="2">렌트카</a>
+						<a href="" class="tab04 blind" data-slide-index="3">휴양지</a>
 					</div>
 				</div>
 				<div class="mct01title ptb10">
