@@ -1,0 +1,88 @@
+@charset "utf-8";
+/*header*/
+.header{background: #0d72a6; background-image: url(../images/04비행기.jpg); background-position: top center; background-repeat: no-repeat; height: 155px; overflow: hidden; background-size: 1630px}
+.headertop {position: relative;}
+.headertop h1{text-indent: -9999px;background-image: url(../images/logo.png);width: 149px; height: 49px; margin-top: 20px; float: left; margin-right: 135px;}
+.headertop h1 a{width: 149px;line-height: 49px;}
+.headertop fieldset{width: 290px; height: 30px; border: 0 none; background-color: #fff; border-radius: 15px; margin-top: 30px;float: left; font-size: 12px; line-height: 30px; }
+.headertop fieldset legend{float: left;}
+.headertop fieldset .field.hds label{font-weight: bold; padding: 0 10px 0 15px; float: left; color: #343d42;}
+.headertop fieldset .field.hds input{border: 0 none; height: 24px; text-indent: 5px; float: left; margin-top: 3px; color: #717276;}
+.headertop fieldset .field.hds button{border: 0 none;width: 15px;height: 15px; background-color: #fff;background-image: url(../images/search_icon.png);float: right; margin-right: 15px; margin-top: 7.5px;}
+.headertop .header_right{float: right; line-height: 90px; font-size: 22px; height: 90px;}
+.headertop .header_right li{float: left; color: #fff;}
+.headertop .header_right li.snswrap{padding-top: 33px;}
+.headertop .header_right li .sns{width: 24px;height: 24px;background-image: url(../images/sns_icon.jpg); margin-left: 5px; color: #fff;}
+.headertop .header_right li .sns.fa{margin-left:15px;}
+.headertop .header_right li .sns.tw{background-position: 24px 0;}
+.headertop .header_right li .sns.bl{background-position: 48px 0;}
+.headertop .header_right li .sns.in{background-position: 72px 0;}
+.headerbottomWrap{background-image: url(../images/hd_bt.jpg); height: 65px; box-shadow: 0 0 10px rgba(50,50,50,0.5);}
+.headerbottom li{float: left; line-height:60px;width: 16.666%; font-weight: bold; border-right: 1px solid #e8e8e8;position: relative;}
+.headerbottom li:first-child{border-left: 1px solid #e8e8e8;}
+.headerbottom a{color: #16272f;}
+.headerbottom a:hover{color: #0e73a7;}
+.headerbottom .new_btn{background-image: url(../images/new_btn.jpg); background-repeat: no-repeat; background-position: 112px 18px;}
+
+/*container*/
+.containerWrap{background-image: url(../images/bgpt.png), url(../images/bgimg.jpg); background-repeat: repeat, no-repeat; background-size: auto, cover; background-position: left left, top center;}
+.bx-wrapper {-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: none; margin-bottom: 0;}
+
+.mct01 .slider01wrap{width: 482px; height: 300px; float: left; background-color: #fff;}
+.mct01title{width: 482px; height: 556px; float: right; padding-left: 14px !important;color: #152630;}
+.mct01title h2{font-size: 64px; padding-bottom: 10px; width: 400px;}
+.mct01title h2 span{text-decoration: underline;}
+.mct01title p{font-size: 30px; letter-spacing: -0.1em;}
+.mct01ct03 .mct01ct03txt{width: 233px; height: 50px; background-color: #152630; background-image: url(../images/more_btn.gif); background-repeat: no-repeat; background-position: 204px 18px;}
+.mct01ct03 .mct01ct03txt .left{float: left; color: #fff; font-weight: bold;}
+.mct01ct03 .mct01ct03txt .right{float: right; padding-right: 20px; color: #6fc564;}
+
+.mct02 .slider02txt{background-color: #529351; height: 65px;}
+.mct02 .slider02txt a{color: #fff;}
+.mct02 .slider02txt a p:last-child{letter-spacing: -0.1em;}
+.mct02 .slider02txt .star{color: #e2a300;}
+.mct02 .tr_boxset{position: relative;}
+.mct02 .nxtbtn, .prvbtn{position: absolute; top: 60px; cursor: pointer;}
+.mct02 .nxtbtn{right: 0;}
+.mct02 .slider03 .slider02txt{background-color: #152630;}
+.mct02 .nxtbtn2, .prvbtn2{position: absolute; top: 60px; cursor: pointer;}
+.mct02 .nxtbtn2{right: 0;}
+.mct02ct03{color: #fff; background-image: url(../images/mct02_03.jpg); position: relative;}
+.mct02ct03 .mct02ct03txt{position: absolute;width: 233px; height: 65px; bottom: 0; background-color: rgba(38,44,47,0.65);}
+.mct02ct03 .mct02ct03txt a{color: #fff;}
+.mct02ct03 .mct02ct03txt span{font-weight: normal; font-size: 14px;}
+.mct02ct03 .mct02ct03txt .tokyowst{font-weight: normal; font-size: 12.5px; color: #d0d0d0;line-height: 20px;}
+.mct02ct04{background-image: url(../images/mct02_04.jpg); position: relative;}
+.mct02ct04 .mct02ct04mtxt{padding: 10px 10px 0 20px;}
+.mct02ct04 .mct02ct04mtxt .ct04mtxt{letter-spacing: -1.8px; color: #595959; padding-bottom: 15px;line-height: 26px;}
+.mct02ct04 .mct02ct04mtxt .ct04stxt{font-size: 12px; color: #42609c;}
+.mct02ct04 .mct02ct04mtxt .star{font-size: 14px; color: #e2a300; letter-spacing: -0.1em;}
+.mct02ct04 .mct02ct04mtxt .star .star2{color: #7e7e7e;}
+.mct02ct04 .mct02ct04stxt{position: absolute;bottom: 0;width: 233px; height: 65px; background-color: #44619d;}
+.mct02ct04 .mct02ct04stxt a{color: #fff;}
+.mct02ct04 .mct02ct04stxt .fbn{color: #d2e4fa;}
+
+.mct03 .mct03ct01wrap{background-image: url(../images/mct03_01.jpg); height: 240px;}
+.mct03 .mct03ct02wrap{background-image: url(../images/mct03_02.jpg); height: 240px;}
+.mct03 .mct03ct03wrap{background-image: url(../images/mct03_03.jpg); height: 240px;}
+.mct03 .mct03ct04wrap{background-image: url(../images/mct03_04.jpg); height: 240px;}
+.mct03 .mct03ct01{width: 233px;height: 240px; background-color: rgba(0,180,200,0.2);}
+.mct03 .mct03ct02{width: 233px;height: 240px; background-color: rgba(38,38,50,0.8);}
+.mct03 .mct03ct03{width: 233px;height: 240px; background-color: rgba(50,56,76,0.65);}
+.mct03 .mct03ct04{width: 233px;height: 240px; background-color: rgba(0,100,40,0.55);}
+.mct03 .mct03ct01 h2{padding-left: 27.5px;}
+.mct03 .mct03ct02 h2, .mct03ct03 h2{padding-left: 26px;padding-bottom: 7px; margin-top: 8px;}
+.mct03 .mct03ct01 h2, .mct03ct04 h2{margin-bottom: 8px;}
+.mct03 .mct03ct04 h2{padding-left: 19px;}
+.mct03 .mct03ct02 .plusbtn, .mct03ct03 .plusbtn{padding-top: 75px;}
+.mct03 h2{float: left;color: #fff;}
+.mct03 p{color: #fff; float: left; font-size: 14px;padding-bottom: 12px;}
+.mct03 .mct03ct01 h2 img{margin-top: -7px;}
+.mct03 .mct03ct02 h2 img{margin-top: -5px;}
+.mct03 .mct03ct03 h2 img, .mct03ct04 h2 img{margin-top: -2px;}
+.mct03 img{float: left; padding-right:5px;}
+.mct03 .plusbtn{width: 28px; height: 28px;cursor: pointer; padding-bottom: 10px; }
+
+.footer{height: 100px;}
+.footer li{float: left; padding: 0 12.5px; font-size: 14px; padding-bottom: 10px;}
+.footer p{color: #707070; font-size: 12px; line-height: 20px;}
