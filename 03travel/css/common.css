@@ -9,6 +9,7 @@
 	.fwb{font-weight: bold;}
 	.m0a{margin: 0 auto;}
 	.pl0{padding-left: 0 !important;}
+	.pr0{padding-right: 0 !important;}
 
 	/* padding-top */
 	.pt10{padding-top: 10px !important;}
@@ -53,3 +54,6 @@
 	.tr_p04{padding: 25px 21px !important;}
 
 	.tr_boxset{width: 233px; height: 240px; margin-right: 16px; margin-bottom: 16px; float: left;}
+	.hv_sc:hover img{transform:scale(1.2); transition: 0.3s;}
+	.hv_sc2:hover>img{transform:scale(1.2); transition: 0.3s;}
+	.ani_bu01{position: absolute;right: 0;}

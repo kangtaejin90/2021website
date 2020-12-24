@@ -13,16 +13,21 @@
 	<script>
 		$(document).ready(function(){
 			$(".slider01").bxSlider({controls:false, pagerCustom:".slider01tab", mode:"vertical", auto:true});
-			var mct02sl = $(".slider02").bxSlider({pager:false, controls:false});
+			var mct02sl = $(".slider02").bxSlider({pager:false, controls:false, auto:true});
 			$(".prvbtn").click(function(){mct02sl.goToPrevSlide()});
 			$(".nxtbtn").click(function(){mct02sl.goToNextSlide()});
-			var mct03sl = $(".slider03").bxSlider({pager:false, controls:false});
+			var mct03sl = $(".slider03").bxSlider({pager:false, controls:false, auto:true});
 			$(".prvbtn2").click(function(){mct03sl.goToPrevSlide()});
 			$(".nxtbtn2").click(function(){mct03sl.goToNextSlide()});
 		});
 	</script>
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+		@keyframes ani_bu01 {from{margin-top: 25px;}to{margin-top: 50px;}}
+		@keyframes ani_bu02 {0%{margin-right: 10px;}25%{margin-right: 8px;}50%{margin-right: 9px;}75%{margin-right: 6px;}100%{margin-right: 10px;}}
+		@keyframes airpl {from{left: -1100px;}to{left: 1500px;}}
+		@keyframes airpl2 {from{top: 440px;}to{top: 430px;}}				
+		@keyframes ani_bu03{from{transform: rotate(0deg);}to{transform: rotate(360deg);}}				
 	</style>
 </head>
 <body>
@@ -57,6 +62,13 @@
 		</div>
 	</header>
 	<div class="containerWrap">
+		<div class="aniWrap">
+			<img src="images/airpl.png" alt="" class="airpl">
+			<img src="images/balloon03.png" alt="" class="ani_bu01 balloon01">
+			<img src="images/balloon02.png" alt="" class="ani_bu01 balloon02">
+			<img src="images/balloon01.png" alt="" class="ani_bu01 balloon03">
+			<img src="images/content5.png" alt="" class="ani_bu02">
+		</div>
 		<div class="content container pt55">
 			<div class="mct01 clearfix">
 				<div class="slider01wraper tr_mr16 tr_mb16 clearfix">
@@ -283,14 +295,14 @@
 					<h2>TRAVEL <span>GO</span></h2>
 					<p>지금,여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</p>
 				</div>
-				<div class="mct01ct03 tr_boxset"><a href="">
+				<div class="mct01ct03 tr_boxset hv_sc"><a href="">
 					<img src="images/mct01_03.jpg" alt="">
 					<div class="mct01ct03txt clearfix tr_p02">
 						<p class="left">프랑스</p>
 						<p class="right">₩1,900,000~</p>
 					</div>
 				</a></div>
-				<div class="mct01ct03 tr_boxset"><a href="">
+				<div class="mct01ct03 tr_boxset hv_sc"><a href="">
 					<img src="images/mct01_04.jpg" alt="">
 					<div class="mct01ct03txt clearfix tr_p02">
 						<p class="left">일본</p>
@@ -300,7 +312,7 @@
 			</div>
 			<div class="mct02 clearfix">
 				<div class="tr_boxset">
-					<ul class="slider02">
+					<ul class="slider02 hv_sc">
 						<li>
 							<img src="images/mct02_01.jpg" alt="">
 							<div class="slider02txt tr_p01"><a href="">
@@ -327,7 +339,7 @@
 					<div class="prvbtn"><img src="images/control_prev.png" alt=""></div>
 				</div>
 				<div class="tr_boxset">
-					<ul class="slider03">
+					<ul class="slider03 hv_sc">
 						<li>
 							<img src="images/mct02_02.jpg" alt="">
 							<div class="slider02txt tr_p01"><a href="">
@@ -353,14 +365,16 @@
 					<div class="nxtbtn2"><img src="images/control_next.png" alt=""></div>
 					<div class="prvbtn2"><img src="images/control_prev.png" alt=""></div>
 				</div>
-				<div class="mct02ct03 tr_boxset pt10">
-					<h2 class="tac">TOKYO</h2>
+				<div class="mct02ct03 tr_boxset hv_sc">
+					<img src="images/mct02_03.jpg" alt="">
+					<h2 class="pt10">TOKYO</h2>
 					<div class="mct02ct03txt tr_p01"><a href="">
 						<p class="fwb">20℃ <span>구름조금</span></p>
 						<p class="tokyowst">습도 60% 바람 남남동 2m/s</p>
 					</a></div>
 				</div>
-				<div class="mct02ct04 tr_boxset mr0">
+				<div class="mct02ct04 tr_boxset mr0 hv_sc">
+					<img src="images/mct02_04.jpg" alt="">
 					<div class="mct02ct04mtxt">
 						<p class="ct04mtxt">"해외여행은 처음이었는데,<br>하이미디어여행 덕분에 무사히<br>다녀올 수 있었어요."</p>
 						<p class="ct04stxt">프랑스 파리 자유여행</p>
@@ -373,32 +387,48 @@
 				</div>
 			</div>
 			<div class="mct03 clearfix">
-				<div class="tr_boxset mct03ct01wrap">
+				<div class="tr_boxset mct03wrap hv_sc2">
+					<img src="images/mct03_01.jpg" alt="" class="pr0">
 					<div class="mct03ct01 clearfix tr_p04">
 						<h2 class="clearfix"><img src="images/box07_icon.png" alt="">여행정보</h2>
 						<p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
-						<div class="plusbtn m0a"><img src="images/plus_btn.png" alt=""></div>
+						<div class="plusbtn">
+							<img src="images/plus_btn.png" alt="" class="plusbtn1 pr0">
+							<img src="images/plus2_btn.png" alt="" class="plusbtn2 pr0">
+						</div>
 					</div>
 				</div>
-				<div class="tr_boxset mct03ct02wrap">
+				<div class="tr_boxset mct03wrap hv_sc2">
+					<img src="images/mct03_02.jpg" alt="" class="pr0">
 					<div class="mct03ct02 clearfix tr_p04">
-						<div class="plusbtn m0a"><img src="images/plus_btn.png" alt=""></div>
+						<div class="plus2btn">
+							<img src="images/plus_btn.png" alt="" class="plusbtn1 pr0">
+							<img src="images/plus2_btn.png" alt="" class="plusbtn2 pr0">
+						</div>
 						<h2 class="clearfix"><img src="images/box08_icon.png" alt="">맛집정보</h2>
 						<p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
 					</div>
 				</div>
-				<div class="tr_boxset mct03ct03wrap">
+				<div class="tr_boxset mct03wrap hv_sc2">
+					<img src="images/mct03_03.jpg" alt="" class="pr0">
 					<div class="mct03ct03 clearfix tr_p04">
-						<div class="plusbtn m0a"><img src="images/plus_btn.png" alt=""></div>
+						<div class="plus2btn">
+							<img src="images/plus_btn.png" alt=""  class="plusbtn1 pr0">
+							<img src="images/plus2_btn.png" alt=""  class="plusbtn2 pr0">
+						</div>
 						<h2 class="clearfix"><img src="images/box09_icon.png" alt="">숙박정보</h2>
 						<p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
 					</div>
 				</div>
-				<div class="tr_boxset mct03ct04wrap mr0">
+				<div class="tr_boxset mct03wrap mr0 hv_sc2">
+					<img src="images/mct03_04.jpg" alt="" class="pr0">
 					<div class="mct03ct04 clearfix tr_p04">
 						<h2 class="clearfix"><img src="images/box10_icon.png" alt="">여행자후기</h2>
 						<p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
-						<div class="plusbtn m0a clearfix"><img src="images/plus_btn.png" alt=""></div>
+						<div class="plusbtn">
+							<img src="images/plus_btn.png" alt="" class="plusbtn1 pr0">
+							<img src="images/plus2_btn.png" alt="" class="plusbtn2 pr0">
+						</div>
 					</div>
 				</div>
 			</div>
