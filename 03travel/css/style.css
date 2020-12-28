@@ -18,9 +18,11 @@
 .headertop .header_right li .sns.bl{background-position: 48px 0;}
 .headertop .header_right li .sns.in{background-position: 72px 0;}
 .headerbottomWrap{background-image: url(../images/hd_bt.jpg); height: 65px; box-shadow: 0 0 10px rgba(50,50,50,0.5);}
-.headerbottom li{float: left; line-height:60px;width: 16.666%; font-weight: bold; border-right: 1px solid #e8e8e8;position: relative;}
+.headerbottom li{float: left;height: 60px; line-height:60px;width: 16.666%; font-weight: bold; border-right: 1px solid #e8e8e8;position: relative;}
 .headerbottom li:first-child{border-left: 1px solid #e8e8e8;}
-.headerbottom a{color: #16272f;}
+.headerbottom li:after{content: '';display: block;width: 100%;height: 5px;background-color: #152630;transform:scaleX(0);transform-origin:left center;transition: 0.3s; position: absolute;}
+.headerbottom li:hover:after{transform: scaleX(1); transform-origin: right center;}
+.headerbottom a{color: #16272f; transition: 0.3s;}
 .headerbottom a:hover{color: #0e73a7;}
 .headerbottom .new_btn{background-image: url(../images/new_btn.jpg); background-repeat: no-repeat; background-position: 112px 18px;}
 
@@ -62,7 +64,7 @@
 
 .mct01title{width: 482px; height: 556px; float: right; padding-left: 14px !important;color: #152630;}
 .mct01title h2{font-size: 64px; padding-bottom: 10px; width: 400px;}
-.mct01title h2 span{text-decoration: underline;}
+.mct01title h2 span{text-decoration: underline; text-underline-position: under;}
 .mct01title p{font-size: 30px; letter-spacing: -0.1em;}
 .mct01ct03{position: relative; overflow: hidden;}
 .mct01ct03 img{position: absolute; transition: 0.3s}
@@ -83,6 +85,7 @@
 .mct02 .nxtbtn2, .prvbtn2{position: absolute; top: 60px; cursor: pointer;}
 .mct02 .nxtbtn2{right: 0;}
 .mct02ct03{color: #fff; position: relative; overflow: hidden;}
+.mct02ct03:hover .mct02ct03txt{background-color: rgba(38,44,47,0.9);}
 .mct02ct03 img{position: absolute; transition: 0.3s}
 .mct02ct03 h2{position: absolute;left: 50%;transform: translateX(-50%);}
 .mct02ct03 .mct02ct03txt{position: absolute;width: 233px; height: 65px; bottom: 0; background-color: rgba(38,44,47,0.65);}

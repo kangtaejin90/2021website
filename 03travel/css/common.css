@@ -4,10 +4,10 @@
 	.container{width: 980px; margin: 0 auto;}
 	.blind{display: block; text-indent: -9999px;}
 	.tac{text-align: center;}
-	.mr0{margin-right: 0 !important;}
-	.mb0{margin-bottom: 0 !important;}
 	.fwb{font-weight: bold;}
 	.m0a{margin: 0 auto;}
+	.mb0{margin-bottom: 0 !important;}
+	.mr0{margin-right: 0 !important;}
 	.pl0{padding-left: 0 !important;}
 	.pr0{padding-right: 0 !important;}
 
@@ -37,6 +37,14 @@
 	.mt10{margin-top: 10px !important;}
 	.mt20{margin-top: 20px !important;}
 	.mt30{margin-top: 30px !important;}
+
+	/*transition*/
+	.ts03{transition: 0.3s !important;}
+	.ts05{transition: 0.5s !important;}
+	.ts10{transition: 1s !important;}
+
+	/*hover*/
+	.hv_ul:hover .tul{text-decoration: underline !important; text-underline-position: under; }
 
 	/*line_ah*/
 	.line_ah:after{content: ''; width: 150px; height: 1px; background-color: #000; margin: 15px auto; display: block; }
