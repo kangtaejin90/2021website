@@ -34,7 +34,7 @@
 .mct01title .balloon02{transform:translate(200px, -100px); margin-top: 25px;margin-right: 10px; animation-name: ani_bu01, ani_bu02; animation-duration: 3s, 4s; animation-iteration-count: infinite; animation-direction: alternate-reverse; animation-timing-function: ease-in-out;}
 .mct01title .balloon03{transform:translate(200px, -150px);margin-top: 25px;margin-right: 10px; animation-name: ani_bu01, ani_bu02; animation-duration: 3s, 6s; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function: ease-in;}
 .aniWrap .airpl{position: absolute; top: 440px; left: -1100px ;transform: scale(0.3);animation-name: airpl, airpl2; animation-duration: 8s, 1s; animation-iteration-count: infinite; animation-direction: normal, alternate; animation-timing-function: linear;}
-.aniWrap .ani_bu02{position: absolute; bottom: 300px; left: 20px;animation-name: ani_bu03; animation-duration: 6s; animation-iteration-count: infinite; animation-direction: normal; animation-timing-function: linear; transition: 6s; transform-origin: 70% 75%; }
+.aniWrap .ani_bu02{position: absolute; bottom: 300px; left: 20px;animation-name: ani_bu03; animation-duration: 6s; animation-iteration-count: infinite; animation-direction: normal; animation-timing-function: linear; transform-origin: 70% 75%; }
 .mct01{position: relative;}
 .mct01 .slider01wraper{width: 482px; height: 300px; float: left; background-color: #fff;position: relative; z-index: 3}
 .mct01 .slider01wrap{width: 350px; height: 300px; float: right;}
@@ -138,8 +138,19 @@
 /*subpage*/
 
 /*subCompany*/
-.containerWrap.subC{background-color: #efefef;background-image: url(../images/bgpt.png); background-repeat: repeat; background-size: auto; background-position: center; position: relative; overflow: hidden; z-index: -2}
-.containerWrap .bgsub{width: 100%; height: 290px;background-image: url(../images/subimg01.jpg); background-repeat: no-repeat; background-size: cover; background-position: top center; position: absolute; z-index: -1}
-.subCompany h2{font-size: 48px; color: #fff;}
-.subCompany h2:after{content: '';display: block; width: 246px; height: 5px; background-color: #fff; margin: 0 auto;}
-.subCompany p{font-size: 14px; color: #fff;}
+.containerWrap.subbg{background-color: #efefef;background-image: url(../images/bgpt.png); background-repeat: repeat; background-size: auto; background-position: center; position: relative; overflow: hidden; z-index: -2}
+.subbg .companyBg{width: 100%; height: 290px;background-image: url(../images/bgpt.png), url(../images/subimg01.jpg); background-repeat:  repeat, no-repeat; background-size: auto, cover; background-position: top center; position: absolute; z-index: -1}
+.subbg .cityBg{width: 100%; height: 290px;background-image: url(../images/bgpt.png), url(../images/subimg02.jpg); background-repeat:  repeat, no-repeat; background-size: auto, cover; background-position: top center; position: absolute; z-index: -1}
+.subbg .hotelBg{width: 100%; height: 290px;background-image: url(../images/bgpt.png), url(../images/subimg03.jpg); background-repeat:  repeat, no-repeat; background-size: auto, cover; background-position: top center; position: absolute; z-index: -1}
+.subbg .rentBg{width: 100%; height: 290px;background-image: url(../images/bgpt.png), url(../images/subimg04.jpg); background-repeat:  repeat, no-repeat; background-size: auto, cover; background-position: top center; position: absolute; z-index: -1}
+.subbg .tipBg{width: 100%; height: 290px; background-image: url(../images/bgpt.png), url(../images/subimg05.jpg); background-repeat:  repeat, no-repeat; background-size: auto, cover; background-position: top center; position: absolute; z-index: -1}
+.subbg .communityBg{width: 100%; height: 290px;background-image: url(../images/bgpt.png), url(../images/subimg06.jpg); background-repeat:  repeat, no-repeat; background-size: auto, cover; background-position: top center; position: absolute; z-index: -1}
+.subCnt h2{font-size: 48px; color: #fff;}
+.subCnt h2:after{content: '';display: block; width: 246px; height: 5px; background-color: #fff; margin: 0 auto;}
+.subCnt h2.city:after{width: 104px;}
+.subCnt h2.hotel:after{width: 154px;}
+.subCnt h2.rent:after{width: 222px;}
+.subCnt h2.community:after{width: 307px;}
+.subCnt p{font-size: 14px; color: #fff;}
+.subCnt img{width: 100%;}
+.subCnt .bar{width: 100%; height: 5px; background-color: #0e73a7;}
