@@ -6,10 +6,12 @@
 	<title>Travel</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
 	<script>
 		$(document).ready(function(){
 			$(".slider01").bxSlider({controls:false, pagerCustom:".slider01tab", mode:"vertical", auto:true, touchEnabled:false});
@@ -20,6 +22,7 @@
 			$(".prvbtn2").click(function(){mct03sl.goToPrevSlide()});
 			$(".nxtbtn2").click(function(){mct03sl.goToNextSlide()});
 		});
+			new WOW().init();
 	</script>
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
@@ -27,7 +30,8 @@
 		@keyframes ani_bu02 {0%{margin-right: 10px;}25%{margin-right: 8px;}50%{margin-right: 9px;}75%{margin-right: 6px;}100%{margin-right: 10px;}}
 		@keyframes airpl {from{left: -1100px;}to{left: 1500px;}}
 		@keyframes airpl2 {from{top: 440px;}to{top: 430px;}}				
-		@keyframes ani_bu03{from{transform: rotate(0deg);}to{transform: rotate(360deg);}}				
+		@keyframes ani_bu03{from{transform: rotate(0deg);}to{transform: rotate(360deg);}};
+		body{font-family: 'Noto Sans KR', sans-serif;}				
 	</style>
 </head>
 <body>
@@ -67,7 +71,7 @@
 			<img src="images/airpl.png" alt="" class="airpl">
 		</div>
 		<div class="content container pt55">
-			<div class="mct01 clearfix">
+			<div class="mct01 clearfix wow fadeInDown">
 				<div class="slider01wraper tr_mr16 tr_mb16 clearfix">
 					<div class="slider01wrap">
 						<div class="slider01">
@@ -310,7 +314,7 @@
 					</div>
 				</a></div>
 			</div>
-			<div class="mct02 clearfix">
+			<div class="mct02 clearfix wow fadeInLeft" data-wow-delay="">
 				<div class="tr_boxset">
 					<ul class="slider02 hv_sc hv_ul">
 						<li>
@@ -386,7 +390,7 @@
 					</a></div>
 				</div>
 			</div>
-			<div class="mct03 clearfix">
+			<div class="mct03 clearfix wow fadeInRight">
 				<div class="tr_boxset mct03wrap hv_sc2 hv_ul">
 					<img src="images/mct03_01.jpg" alt="" class="pr0">
 					<div class="mct03ct01 clearfix tr_p04">

@@ -106,7 +106,7 @@
 
 .mct03 .mct03wrap{position: relative; overflow: hidden;}
 .mct03 .mct03wrap>img{position: absolute; transition: 0.3s}
-.mct03 .mct03wrap>div{position: absolute;}
+.mct03 .mct03wrap>div{position: absolute; transition: 0.5s}
 .mct03 .mct03ct01{width: 233px;height: 240px; background-color: rgba(0,180,200,0.2);}
 .mct03 .mct03ct02{width: 233px;height: 240px; background-color: rgba(38,38,50,0.8);}
 .mct03 .mct03ct03{width: 233px;height: 240px; background-color: rgba(50,56,76,0.65);}
@@ -127,8 +127,12 @@
 .mct03 .plus2btn .plusbtn1,.mct03 .plus2btn .plusbtn2{position: absolute; bottom: 0;left: 81.5px;}
 .mct03 .plusbtn1{opacity: 1; transition: 0.5s;}
 .mct03 .plusbtn2{opacity: 0; transform: scale(1); transition: 0.5s;}
-.mct03>div:hover .plusbtn1{opacity: 0; transform: rotate(180deg);}
-.mct03>div:hover .plusbtn2{opacity: 1; transform: scale(1.1) rotate(180deg);}
+.mct03>div:hover .plusbtn1{opacity: 0; transform: rotate(180deg); transition-delay: 0.5s;}
+.mct03>div:hover .plusbtn2{opacity: 1; transform: scale(1.1) rotate(180deg); transition-delay: 0.5s;}
+.mct03wrap:hover .mct03ct01{animation-name: slideInLeft;transform-origin: center bottom; animation-duration: 0.5s;}
+.mct03wrap:hover .mct03ct02{animation-name: slideInUp;transform-origin: center bottom; animation-duration: 0.5s;}
+.mct03wrap:hover .mct03ct03{animation-name: slideInDown;transform-origin: center bottom; animation-duration: 0.5s;}
+.mct03wrap:hover .mct03ct04{animation-name: slideInRight;transform-origin: center bottom; animation-duration: 0.5s;}
 
 /*footer*/
 .footer{height: 100px;}
