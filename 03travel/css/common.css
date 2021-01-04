@@ -58,8 +58,8 @@
 	/*travel*/
 	.tr_mb16{margin-bottom: 16px !important;}
 	.tr_mr16{margin-right: 16px !important;}
-	.tr_p01{padding: 10px 15px !important;}
-	.tr_p02{padding: 15px 20px !important;}
+	.tr_p01{padding: 9px 15px 10px 15px !important;}
+	.tr_p02{padding: 12px 20px 15px 20px !important;}
 	.tr_p03{padding: 25px 20px !important;}
 	.tr_p04{padding: 25px 21px !important;}
 
