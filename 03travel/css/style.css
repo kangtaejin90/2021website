@@ -1,4 +1,9 @@
 @charset "utf-8";
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body{font-family: 'Noto Sans KR', sans-serif;}
+
 /*header*/
 .header{background: #0d72a6; background-image: url(../images/04비행기.jpg), url(../images/hd_bg.jpg); background-position: top center, top center; background-repeat: no-repeat, no-repeat; height: 155px; overflow: hidden; background-size: 1630px, cover;}
 .headertop {position: relative;}
